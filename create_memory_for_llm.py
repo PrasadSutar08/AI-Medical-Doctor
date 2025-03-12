@@ -4,7 +4,7 @@ from langchain.text_splitter import RecursiveCharacterTextSplitter
 from langchain_community.vectorstores import FAISS
 from langchain_huggingface.embeddings import HuggingFaceEmbeddings  
 from langchain_community.document_loaders import PyMuPDFLoader
-from langchain_huggingface import HuggingFaceEndpoint  # ✅ Corrected Import
+from langchain_huggingface import HuggingFaceEndpoint 
 from dotenv import load_dotenv, find_dotenv
 
 # Load environment variables
@@ -17,7 +17,7 @@ def load_pdf_files(data_path):
     loader = DirectoryLoader(
         data_path,
         glob="*.pdf",
-        loader_cls=lambda path: PyMuPDFLoader(path)  # ✅ Using PyMuPDFLoader
+        loader_cls=lambda path: PyMuPDFLoader(path)
     )
     documents = loader.load()
     return documents

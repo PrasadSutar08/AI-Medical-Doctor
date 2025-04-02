@@ -36,7 +36,7 @@ def load_llm(huggingface_repo_id, HF_TOKEN):
 
 def main():
     st.title("Ask Medical Chatbot!")
-    st.text("This custom GPT leverages advanced AI along with the an Encyclopedia trusted by famous Doctors to provide accurate, fact-based medical answers.")
+    st.text("This custom GPT leverages advanced AI along an Encyclopedia entrusted by famous Doctors to provide accurate, fact-based medical answers.")
 
     if 'messages' not in st.session_state:
         st.session_state.messages = []

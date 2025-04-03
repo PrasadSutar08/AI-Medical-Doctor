@@ -44,7 +44,7 @@ def main():
     for message in st.session_state.messages:
         st.chat_message(message['role']).markdown(message['content'])
 
-    prompt=st.chat_input("Pass your prompt here")
+    prompt=st.chat_input("How can I assist you with your concern?")
 
     if prompt:
         st.chat_message('user').markdown(prompt)

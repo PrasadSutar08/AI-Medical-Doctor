@@ -37,7 +37,7 @@ def load_llm(huggingface_repo_id, HF_TOKEN):
 def main():
     st.title("Ask Medical Chatbot!")
     st.text("This custom GPT leverages advanced AI along an Encyclopedia entrusted by famous Doctors to provide accurate, fact-based medical answers.")
-
+    st.text("Copyright © 2025 Prasad Sutar. All rights reserved.")
     if 'messages' not in st.session_state:
         st.session_state.messages = []
 
@@ -88,6 +88,8 @@ def main():
 
         except Exception as e:
             st.error(f"Error: {str(e)}")
+
+            
 
 if __name__ == "__main__":
     main()
